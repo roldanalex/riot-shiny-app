@@ -1,5 +1,5 @@
 page_sidebar(
-  title = h3("Shiny OCR App"),
+  title = h3("Personal OCR Dashboard"),
   theme = my_theme,
   sidebar = sidebar(
     open = "open",
