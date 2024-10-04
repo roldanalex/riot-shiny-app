@@ -1,11 +1,11 @@
 page_sidebar(
-  title = h3("Personal OCR Dashboard"),
+  title = h3("{RIOT} - R/Shiny Image OCR Technology"),
   theme = my_theme,
   sidebar = sidebar(
     open = "open",
     div(
       align = "left",
-      h5("This dashboard provides OCR capabilities for images."),
+      h5("This app allows you to extract text from images."),
       br()
     ),
     br(),
@@ -92,7 +92,7 @@ page_sidebar(
   tags$footer(
     fluidRow(
       column(4, "© Alexis Roldan - 2024"),
-      column(4, "Shiny OCR App v1.0.3"),
+      column(4, "{RIOT} v1.0.2"),
       column(
         4,
         tags$a(
