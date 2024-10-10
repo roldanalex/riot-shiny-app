@@ -10,13 +10,13 @@ Interactive application developed using R/Shiny designed to extract text from im
 ## Preview - Full Window
 Please see below for screenshot of app web version.
 
-![{RIOT} - Web Version](figs/personal_yt_dashboard_web.png)
+![{RIOT} - Web Version](figs/riot-web-version.png)
 
 ## Preview - Mobile Version
 Screenshot below show app mobile version.
 <br>
 <br>
-<img width="400px" src="figs/personal_yt_dashboard_mobile.png" alt="{RIOT} - Mobile Version">
+<img width="400px" src="figs/riot-mobile-version.png" alt="{RIOT} - Mobile Version">
 
 ## Configuration
 The following packages are required:
