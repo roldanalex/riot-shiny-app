@@ -12,7 +12,7 @@ function(input, output, session) {
 
   })
 
-  image <- image_read("www/Topic Modeling Paper.png")
+  image <- image_read("www/ocr-example-2.png")
 
   observeEvent(input$upload, {
 

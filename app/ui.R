@@ -37,9 +37,10 @@ page_sidebar(
   fluidRow(
     column(
       width = 12,
+      tags$h4("Click & Drag Over Image"),
       div(
         style = "max-height: 100%;",
-        shinydashboard::box(
+        card(
           width = 12,
           imageOutput(
             "image",
@@ -55,34 +56,36 @@ page_sidebar(
               stroke = "#F5A623",
               clip = FALSE
             ),
-            height = "500px"
-          ),
-          title = "Click & Drag Over Image"
+            height = "600px"
+          )
         )
       )
     )
   ),
-  div(
-    style = "margin-bottom: 80px;"
-  ),
+  # div(
+  #   style = "margin-bottom: 80px;"
+  # ),
   fluidRow(
     column(
       width = 12,
-      shinydashboard::box(
+      tags$h4("Area Selected"),
+      card(
         width = 12,
-        imageOutput("croppedimage", height = "500px"),
-        title = "Area Selected"
+        imageOutput(
+          "croppedimage",
+          height = "auto"
+        )
       )
     )
   ),
   fluidRow(
     column(
       width = 12,
-      box(
+      tags$h4("Text Output"),
+      card(
         width = 12,
         textOutput("ocr_text"),
-        verbatimTextOutput("text_extract"),
-        title = "Text Output"
+        verbatimTextOutput("text_extract")
       )
     )
   ),
@@ -92,7 +95,7 @@ page_sidebar(
   tags$footer(
     fluidRow(
       column(4, "© Alexis Roldan - 2024"),
-      column(4, "{RIOT} v1.0.2"),
+      column(4, "{RIOT} v1.1.2"),
       column(
         4,
         tags$a(
