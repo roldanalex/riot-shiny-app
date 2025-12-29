@@ -1,5 +1,11 @@
 function(input, output, session) {
 
+  source("help_modal.R", local = TRUE)
+
+  observeEvent(input$help, {
+    showModal(help_modal)
+  })
+
   observeEvent(input$current_theme, {
 
     # Make sure theme is kept current with desired

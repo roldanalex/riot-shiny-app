@@ -1,8 +1,8 @@
 page_sidebar(
-  title = h3("{RIOT} - R/Shiny Image OCR Technology"),
+  title = h3("{RIOT} - R/Shiny Image OCR Technology", class = "text-body"),
   theme = my_theme,
   sidebar = sidebar(
-    open = "open",
+    open = "desktop",
     div(
       align = "left",
       h5("This app allows you to extract text from images."),
@@ -23,6 +23,9 @@ page_sidebar(
         textInput("size", "Size", value = "1200x600")
       )
     ),
+    br(),
+    actionButton("help", "User Guide", icon = icon("circle-info"), class = "btn-danger", style = "width: 100%"),
+    br(),
     tags$h4("Selected Area"),
     verbatimTextOutput("coordstext"),
     br(),
@@ -42,21 +45,24 @@ page_sidebar(
         style = "max-height: 100%;",
         card(
           width = 12,
-          imageOutput(
-            "image",
-            click = "image_click",
-            hover = hoverOpts(
-              id = "image_hover",
-              delay = 500,
-              delayType = "throttle"
-            ),
-            brush = brushOpts(
-              id = "image_brush",
-              fill = "#F5A623",
-              stroke = "#F5A623",
-              clip = FALSE
-            ),
-            height = "600px"
+          div(
+            style = "min-height: 400px;",
+            imageOutput(
+              "image",
+              click = "image_click",
+              hover = hoverOpts(
+                id = "image_hover",
+                delay = 500,
+                delayType = "throttle"
+              ),
+              brush = brushOpts(
+                id = "image_brush",
+                fill = "#F5A623",
+                stroke = "#F5A623",
+                clip = FALSE
+              ),
+              height = "auto"
+            )
           )
         )
       )

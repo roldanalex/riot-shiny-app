@@ -1,0 +1,52 @@
+---
+title: "{RIOT}"
+subtitle: "R/Shiny Image OCR Technology"
+author: "Alexis Roldan"
+format: revealjs
+theme: moon
+---
+
+## What is {RIOT}?
+
+**{RIOT}** stands for **R**/**S**hiny **I**mage **O**CR **T**echnology.
+
+It is an interactive web application that bridges the gap between static imagery and actionable data.
+
+::: {.incremental}
+- Built with R Shiny
+- Powered by Tesseract OCR
+- Real-time image processing
+:::
+
+## The Problem
+
+Data scientists and researchers often encounter data trapped in:
+
+- Scanned PDF documents
+- Screenshots of tables
+- Images in slide decks
+- Handwritten notes
+
+Manual transcription is slow and error-prone.
+
+## The Solution: {RIOT}
+
+An intuitive interface to **digitize text instantly**.
+
+1. **Upload** your image.
+2. **Select** the region of interest interactively.
+3. **Extract** the text automatically.
+
+## Key Benefits
+
+- **Efficiency**: Convert hours of typing into seconds of clicking.
+- **Accuracy**: Leverage the power of the Tesseract 4.0+ engine.
+- **Flexibility**: Works on desktop and mobile devices.
+- **Accessibility**: Helps convert visual information into screen-reader friendly text.
+
+## Use Cases
+
+- **Data Entry**: Quickly digitize receipts or business cards.
+- **Research**: Extract quotes from archival scans.
+- **NLP Pipelines**: Create training datasets from image collections.
+- **Education**: Convert textbook diagrams into notes.
