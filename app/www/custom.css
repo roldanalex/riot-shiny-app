@@ -1,0 +1,183 @@
+/* ========================================
+   {RIOT} App - Custom Styles
+   ======================================== */
+
+/* --- General Layout --- */
+.main-content-area {
+  padding-bottom: 60px;
+}
+
+/* --- Image Brush Area --- */
+#image img {
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Touch Targets (WCAG / Apple HIG) --- */
+.btn, .form-control, .form-select, .shiny-input-container .btn {
+  min-height: 44px;
+}
+
+/* Prevent iOS auto-zoom on input focus */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="file"],
+select,
+textarea {
+  font-size: 16px !important;
+}
+
+/* --- Empty State Placeholders --- */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  opacity: 0.5;
+  text-align: center;
+  padding: 20px;
+}
+
+.empty-state i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* --- Workflow Hint --- */
+.workflow-hint {
+  text-align: center;
+  opacity: 0.6;
+  font-style: italic;
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+
+/* --- Results Panel --- */
+.results-panel .card {
+  margin-bottom: 1rem;
+}
+
+.text-output-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.text-output-header h5 {
+  margin-bottom: 0;
+}
+
+/* --- Export Buttons Row --- */
+.export-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.export-buttons .btn {
+  flex: 1;
+  min-width: 80px;
+}
+
+/* --- Footer --- */
+.app-footer {
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+  color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+  background-color: #333333;
+  font-size: 0.85em;
+}
+
+.app-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+/* --- Camera Button (Mobile Only) --- */
+.camera-btn-wrapper {
+  margin-top: 10px;
+}
+
+.camera-btn-wrapper label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.camera-btn-wrapper input[type="file"] {
+  display: none;
+}
+
+/* --- Sidebar Cleanup --- */
+.sidebar .accordion {
+  margin-top: 1rem;
+}
+
+/* --- Source Image Card --- */
+.source-image-card {
+  min-height: 300px;
+}
+
+/* ========================================
+   Responsive Styles
+   ======================================== */
+
+/* Tablets */
+@media (max-width: 991.98px) {
+  .source-image-card {
+    min-height: 250px;
+  }
+}
+
+/* Phones */
+@media (max-width: 767.98px) {
+  .source-image-card {
+    min-height: 200px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  .card-body {
+    padding: 0.75rem;
+  }
+
+  .export-buttons .btn {
+    font-size: 0.85em;
+  }
+}
+
+/* Landscape on mobile */
+@media (max-width: 767.98px) and (orientation: landscape) {
+  .bslib-page-sidebar .sidebar {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}

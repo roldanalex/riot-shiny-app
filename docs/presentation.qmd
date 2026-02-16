@@ -13,9 +13,10 @@ theme: moon
 It is an interactive web application that bridges the gap between static imagery and actionable data.
 
 ::: {.incremental}
-- Built with R Shiny
+- Built with R Shiny & bslib
 - Powered by Tesseract OCR
-- Real-time image processing
+- Real-time image processing with magick
+- Export-ready results
 :::
 
 ## The Problem
@@ -33,15 +34,17 @@ Manual transcription is slow and error-prone.
 
 An intuitive interface to **digitize text instantly**.
 
-1. **Upload** your image.
-2. **Select** the region of interest interactively.
-3. **Extract** the text automatically.
+1. **Upload** your image (or snap a photo on mobile).
+2. **Adjust** brightness, contrast, zoom, or rotation if needed.
+3. **Select** the region of interest interactively.
+4. **Export** the text as TXT, CSV, or save the cropped image.
 
 ## Key Benefits
 
 - **Efficiency**: Convert hours of typing into seconds of clicking.
-- **Accuracy**: Leverage the power of the Tesseract 4.0+ engine.
-- **Flexibility**: Works on desktop and mobile devices.
+- **Accuracy**: Leverage the power of the Tesseract 4.0+ engine. Fine-tune images with built-in adjustments.
+- **Flexibility**: Works on desktop and mobile devices with responsive side-by-side layout.
+- **Export-Ready**: Copy text to clipboard or download as TXT, CSV, or PNG.
 - **Accessibility**: Helps convert visual information into screen-reader friendly text.
 
 ## Use Cases
@@ -50,3 +53,14 @@ An intuitive interface to **digitize text instantly**.
 - **Research**: Extract quotes from archival scans.
 - **NLP Pipelines**: Create training datasets from image collections.
 - **Education**: Convert textbook diagrams into notes.
+
+## What's New in v2.0
+
+::: {.incremental}
+- **Copy & Export**: Clipboard copy, TXT/CSV/PNG downloads
+- **Image Adjustments**: Zoom, brightness, contrast, rotation, grayscale
+- **Side-by-Side Layout**: Source image alongside results on desktop
+- **Mobile Camera**: Dedicated capture button using the rear camera
+- **Smart Validation**: Auto-scaling, 10 MB limit, error handling
+- **Loading Feedback**: Progress indicators during OCR processing
+:::

@@ -1,11 +1,14 @@
 library(shiny)
 library(magick)
 library(tesseract)
-library(shinydashboard)
 library(shinyWidgets)
 library(bslib)
+library(shinycssloaders)
+library(base64enc)
 
-my_theme <- 
+options(shiny.maxRequestSize = 10 * 1024^2)
+
+my_theme <-
   bs_theme(
     bootswatch = "darkly",
     heading_font = font_google("Lobster", wght = 400),

@@ -36,9 +36,24 @@
 
 - **🖱️ Interactive Selection**: Click and drag to select specific areas of an image for targeted OCR.
 - **🔄 Real-time Processing**: Instantly view the cropped region and the extracted text as you adjust your selection.
+- **📋 Copy & Export**: Copy extracted text to your clipboard with one click, or download as TXT, CSV, or cropped PNG.
+- **🎛️ Image Adjustments**: Fine-tune zoom, brightness, contrast, and rotation. Toggle grayscale mode to improve OCR accuracy on colored backgrounds.
 - **🎨 Customizable Themes**: Switch between Light and Dark modes to suit your working environment.
-- **🖼️ Image Manipulation**: Resize images dynamically to improve visibility or OCR accuracy.
-- **📱 Responsive Design**: Works seamlessly on desktop and mobile devices.
+- **📱 Mobile-First Design**: Responsive layout with touch-friendly controls and a dedicated camera capture button for on-the-go OCR.
+- **🛡️ Smart Validation**: Automatic scaling of large images (>4000px), 10 MB upload limit, and user-friendly error messages for corrupt files.
+
+## 📦 What's New in v2.0.0
+
+- **Export functionality**: Download OCR results as TXT, CSV, or save the cropped image as PNG.
+- **Copy to clipboard**: One-click copy of extracted text with visual feedback.
+- **Image adjustments panel**: Zoom, brightness, contrast, rotation, and grayscale controls in a collapsible sidebar accordion.
+- **Side-by-side layout**: Source image and results panel displayed side-by-side on desktop (stacked on mobile), eliminating excessive scrolling.
+- **Mobile camera capture**: Dedicated "Take Photo" button on mobile devices opens the rear camera directly.
+- **Loading indicators**: Progress feedback during OCR extraction with animated spinners.
+- **Empty-state placeholders**: Clear visual cues when no region is selected.
+- **Fixed footer**: Footer no longer overlaps content; stacks responsively on mobile.
+- **File validation**: 10 MB upload limit, auto-scaling of oversized images, and error handling for invalid files.
+- **Removed**: Confusing manual "Size" input replaced by intuitive zoom slider. Removed unused `shinydashboard` dependency.
 
 ## 👨‍💻 Developing Similar Tools for Data Science
 
